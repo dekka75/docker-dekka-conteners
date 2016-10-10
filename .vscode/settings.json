@@ -1,15 +1,5 @@
 // Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
 {
-    // Fichiers
-    // Configurez les modèles Glob pour l'exclusion des fichiers et des dossiers.
-    "files.exclude": {
-        "**/node/imock-dekka-server.tar": true,
-        "**/test/": true,
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true
-    },
     // Caractère de fin de ligne par défaut.
     "files.eol": "\n"
 }

@@ -3,7 +3,7 @@
 # TO_RUN:           docker run -it --rm --name node -p 8080:3000 -p 8081:5858 -v /opt/dekka/node/app:/opt/node dekka/node
 # TO_RUN:           docker run -it --rm --name node -p 8080:3000 -p 8081:5858 -v /opt/dekka/imock/server:/opt/node dekka/node
 # TO_EXEC:          docker exec -it node /bin/bash
-# TO_TEST:          docker exec -it node ./node_modules/.bin/mocha --reporter spec
+# TO_TEST:          docker exec -t $(docker ps | grep dekka/node:latest | awk '{print $1}') ./node_modules/.bin/mocha --reporter spec --colors
 # TO_RUN_APP:       express app
 #                   cd app
 #                   npm install
